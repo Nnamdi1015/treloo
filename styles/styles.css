@@ -1,0 +1,19 @@
+/*css reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+     font-family: 'Poppins', 'Roberto', sans-serif;
+    /*ackground-color: #f5f5f5; */
+ }
+ .hero-contaimer {
+    background-image:
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    /*padding 20px;*/
+ }
