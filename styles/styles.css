@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', 'Roberto', sans-serif;
-   /* background-color: #820d0d; */
+    /* background-color: #820d0d; */
 }
 
 .hero-container {
@@ -70,6 +70,7 @@ header {
     text-align: center;
     max-width: 850px;
     margin: 120px;
+    color: white;
 
 }
 
@@ -85,3 +86,197 @@ header {
 
 /*Booking section styles*/
 .booking-container {}
+
+
+
+/*special offers styles*/
+.special-offers {
+    margin: 100px 0px;
+    border: 1px solid forestgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.special-offers h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+
+.top-offers-tabs {
+    display: flex;
+    border-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.offer-btn {
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+}
+
+.offer-btn.active {
+    background-color: #3e86f5;
+    color: white;
+    box-shadow: 0 4px 10px rgba(77, 150, 225, 0.3);
+}
+
+/*Buttom offer Grid styles*/
+
+.buttom-offers {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.offer-card{
+    background-color: #ffff;
+    border-radius: 24px;
+    padding: 16px 34px 24px ;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.0.3);
+}
+.card-img-container{
+    position: relative;
+}
+.offer-card img{
+    
+}
+/*vertical Date style*/
+.card-date{
+    position: absolute;
+    top: 20px;
+    z-index: 10;
+    right: -25px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #8895a7;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 8px;
+}
+.card-content{
+    padding: 20px 10px ;
+}
+.card-info-top{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+.tag{
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+.tag-relax{
+background-color: #fcddec
+
+}
+.tag-adventure{
+    background-color: #DFF4FD;
+    color: #7879f1;
+}
+.duration{
+    font-size: 14px;
+    color: #8895a7;
+}
+.card-subtitle{
+    font-size: 22px;
+    font-weight: 600px;
+    color: #1e2a3b;
+    padding: 10px 0;
+}
+.card-info-botton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e2a3b;
+}
+.price > span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #8895a7;
+}
+
+.book-btn{
+    text-decoration: none;
+    color: #3e86f5;
+    background-color: #f2f6ff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.book-btn:hover{
+    background-color: #e1e9fa;
+}
+/* Travel Section Style */
+.travel-section{
+    margin: 100px 0;
+}
+.travel-section > .container{
+    display: flex;
+}
+.text-column{
+    padding: 60px;
+}
+.text-column h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: ;
+}
+.text-column p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.contact-btn{
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration:none;
+    font-weight: 600;
+}
+.contact-btn:hover{
+background-color: #0056b3;
+}
+.stat-box{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.stat-number{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #007bff;
+}
+.stat-label{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: ;
+}
