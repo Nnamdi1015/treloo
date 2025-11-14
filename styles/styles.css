@@ -133,7 +133,7 @@ header {
 
 /*Buttom offer Grid styles*/
 
-.buttom-offers {
+.bottom-offers {
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -278,5 +278,17 @@ background-color: #0056b3;
 .stat-label{
     font-size: 0.8em;
     text-transform: uppercase;
-    color: ;
+    color:#666;
+}
+.top-right{
+    top: 20px;
+    right: -50px;
+}
+.middle-left{
+    top: 50%;
+    left: -70px;
+}
+.bottom-rigt{
+    bottom: 20px;
+    right: -30px;
 }
