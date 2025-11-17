@@ -51,18 +51,26 @@
 }
 
 .box {
-    background-color: purple;
-    width: 100px;
-    height: 100px;
-    border: 10px;
+    background-color: white;
+    margin: 5px;
+
+}
+.boxy1 {
+    flex-shrink: 2;
+}
+.boxy2 {
+    flex-shrink: 1;
+}
+.boxy3 {
+    flex-shrink: 0;}
     
-}
-
-.box1 {
+.boxy1 {
+    padding: 10px;
+    height: 10;
     background-color: purple;
 }
 
-.box2 {
+.boxy2 {
     background-color: red;
 }
 
@@ -73,6 +81,7 @@
 .boxy4 {
     background-color: blue;
 }
-.container{
+
+.container {
     position: relative;
 }
