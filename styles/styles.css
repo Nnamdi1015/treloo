@@ -86,9 +86,29 @@ header {
 }
 
 /*Booking section styles*/
-.booking-container {}
+.booking-container {
+    background-color: #fff;
+    border-radius: 20px;
+}
 
+/* .booking-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 30PX 40PX;
+}
 
+.location-section {
+    border: 1px solid #ccc;
+    padding-right: 20px;
+    margin-right: 20px;
+    /* display: flex; */
+    /* border-radius: 20px;
+    align-items: center; */}
+
+.form-group { */
+    /* display: flex; */
+
+}
 
 /*special offers styles*/
 .special-offers {
