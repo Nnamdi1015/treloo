@@ -1,5 +1,6 @@
 /*css reset*/
 
+
 * {
     margin: 0;
     padding: 0;
@@ -7,21 +8,22 @@
 }
 
 body {
-    font-family: 'Poppins', 'Roberto', sans-serif;
-    background-color: #C4C4C4;
-
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    background-color: #f4f7f9;
 }
 
+
 .hero-container {
-    background-image: url("../images/background-img.png");
+    background-image: url(../images/Hero-1.png);
     background-size: cover;
     background-position: center;
     height: 700px;
-    /*padding 20px;*/
-
+    position: relative;
+    /* color: white; */
+    padding: 30px 100px;
 }
 
-/*header &navigation style*/
+/* Header & navigation Styles  */
 header {
     display: flex;
     justify-content: space-between;
@@ -46,33 +48,35 @@ header {
     display: flex;
     gap: 40px;
     align-items: center;
+    font-size: large;
 }
 
 .nav>.nav-links>li>a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav-btn {
     background-color: white;
-    color: blue;
+    color: #3E86F5;
     border: none;
     padding: 10px 24px;
     border-radius: 8px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
 }
 
-/*Hero section style */
+/* Hero Section Styles */
 .hero-content {
     text-align: center;
     max-width: 850px;
-    margin: 120px;
+    margin: 120px auto 0;
     color: white;
-
+    /* border: 1px solid red; */
 }
 
 .hero-content h1 {
@@ -81,43 +85,92 @@ header {
 
 .hero-content p {
     font-size: 24px;
-    line-height: 200px;
-    margin-top: 40px;
+    line-height: 200%;
+    margin-top: 40px
 }
 
-/*Booking section styles*/
+/* Booking Section Styles */
 .booking-container {
-    background-color: #fff;
+    /* border: 1px solid blue;
+    max-width: 1100px;
+    position: absolute;
+    width: 80%;
+    left: 50%; */
+    background-color: #ffffff;
     border-radius: 20px;
 }
 
-/* .booking-form {
+.booking-form {
     display: flex;
     justify-content: space-between;
-    padding: 30PX 40PX;
+    padding: 30px 40px;
 }
 
 .location-section {
     border: 1px solid #ccc;
     padding-right: 20px;
     margin-right: 20px;
-    /* display: flex; */
-    /* border-radius: 20px;
-    align-items: center; */}
-
-.form-group { */
-    /* display: flex; */
-
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
 }
 
-/*special offers styles*/
+.date-section {
+    border: 1px solid #ccc;
+    padding-right: 20px;
+    margin-right: 20px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.bold-text {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #00000080;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-container {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+.search-btn {
+    background-color: #3E86F5CC;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Special Offers Styles  */
 .special-offers {
-    margin: 100px 0px;
-    border: 1px solid forestgreen;
+    margin: 100px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #f4f7f9;
 }
 
 .special-offers h2 {
@@ -129,31 +182,35 @@ header {
 
 .top-offers-tabs {
     display: flex;
-    border-color: white;
+    justify-content: center;
+    background-color: white;
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 
 .offer-btn {
     border: none;
     background-color: transparent;
+    padding: 10px 25px;
     border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    color: black;
+    color: #000000;
+
 }
 
 .offer-btn.active {
-    background-color: #3e86f5;
+    background-color: #3E86F5;
     color: white;
-    box-shadow: 0 4px 10px rgba(77, 150, 225, 0.3);
+    box-shadow: 0 4px 10px rgba(77, 150, 255, 0.3);
 }
 
-/*Buttom offer Grid styles*/
 
+/* Bottom Offers Grid Styles  */
 .bottom-offers {
     display: flex;
     gap: 30px;
@@ -162,28 +219,30 @@ header {
 }
 
 .offer-card {
-    background-color: #ffff;
+    background-color: #ffffff;
     border-radius: 24px;
-    padding: 16px 34px 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.0.3);
+    padding: 16px 34px 16px 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.card-img-container {
+.offer-img-container {
     position: relative;
 }
 
-.offer-card img {}
+.offer-card img {
+    width: 100%;
+}
 
-/*vertical Date style*/
+/* Vertical Date Styling  */
 .card-date {
     position: absolute;
-    top: 20px;
+    top: 50px;
     z-index: 10;
     right: -25px;
     writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    color: #8895a7;
-    font-size: 16px;
+    /* transform: rotate (180deg); */
+    color: #8895A7;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 8px;
 }
@@ -192,7 +251,7 @@ header {
     padding: 20px 10px;
 }
 
-.card-info-top {
+.card-info-tap {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -202,31 +261,33 @@ header {
 .tag {
     padding: 4px 12px;
     border-radius: 12px;
+    font-size: 12px;
     font-weight: 500;
+
 }
 
 .tag-relax {
-    background-color: #fcddec
+    background-color: #FCDDEC;
 }
 
 .tag-adventure {
-    background-color: #DFF4FD;
-    color: #7879f1;
+    background-color: #F1F1FD;
+    color: #7879F1;
 }
 
 .duration {
     font-size: 14px;
-    color: #8895a7;
+    color: #00000080;
 }
 
 .card-subtitle {
-    font-size: 22px;
-    font-weight: 600px;
-    color: #1e2a3b;
+    font-size: 24px;
+    font-weight: 500;
+    color: Black;
     padding: 10px 0;
 }
 
-.card-info-botton {
+.card-info-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -235,19 +296,20 @@ header {
 .price {
     font-size: 20px;
     font-weight: 700;
-    color: #1e2a3b;
+    color: black;
 }
+
 
 .price>span {
     font-size: 16px;
     font-weight: 400;
-    color: #8895a7;
+    color: #8895A7;
 }
 
 .book-btn {
     text-decoration: none;
-    color: #3e86f5;
-    background-color: #f2f6ff;
+    color: #3E86F5;
+    background-color: #F2F6FF;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 14px;
@@ -258,45 +320,52 @@ header {
     background-color: #e1e9fa;
 }
 
-/* Travel Section Style */
+/* Travel Section Styles  */
 .travel-section {
     margin: 100px 0;
-    border: 2px solid orange;
-
+    /* max-width: 1200px; */
 }
 
 .travel-section>.container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    background-color: #f4f7f9;
     align-items: center;
+    padding: 0 50px;
 }
 
 .text-column {
-    padding: 60px;
-    flex: 1;
-    text-align: center;
+    padding-left: 60px;
+    /* flex: 1; */
+}
+
+.travel-image-column {
+    position: relative;
 }
 
 .text-column h2 {
     font-size: 48px;
     font-weight: 700;
-    color: #333;
+    color: #000000;
     margin-bottom: 20px;
-    line-height: ;
+    line-height: 1.2;
+    /* border: 2px solid red; */
+
+
 }
 
 .text-column p {
     font-size: 20px;
-    color: #555;
+    color: #555555;
     margin-bottom: 20px;
     text-align: justify;
-    color: rgba(0, 0, 0, 0.5);
+
 }
 
 .contact-btn {
     display: inline-block;
     background-color: #007bff;
-    color: #fff;
+    color: white;
     padding: 15px 30px;
     border-radius: 8px;
     text-decoration: none;
@@ -311,10 +380,9 @@ header {
     background-color: white;
     border-radius: 15px;
     padding: 15px 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     position: absolute;
 }
@@ -326,29 +394,32 @@ header {
 }
 
 .stat-label {
-    font-size: 0.8em;
+    font-size: 01em;
     text-transform: uppercase;
     color: #666;
 }
 
+
 .top-right {
-    top: 20px;
-    right: -50px;
+    top: 45px;
+    right: -80px;
 }
 
 .middle-left {
     top: 50%;
     left: -70px;
+    transform: translate(-50);
 }
 
-.bottom-rigt {
+.bottom-right {
     bottom: 45px;
-    right: -50px;
+    right: -80px;
 }
 
-/* Destination section styles */
+
+/* Destination Section  */
 .destination-section {
-    /* border: 2px solid purple; */
+    /* border: 1px solid purple; */
     max-width: 1200px;
     margin: 100px auto;
 }
@@ -382,30 +453,33 @@ header {
 }
 
 .tab-button.active {
-    background-color: #ffff;
-    color: #3e86f5;
-    box-shadow: 0 4px 10px rgba(77, 150, 225, 0.3);
+    background-color: #ffffff;
+    color: #3E86F5;
+    box-shadow: 0 4px 10px rgba(77, 150, 255, 0.3);
+}
+
+.tab-button.adb {
+    color: #00000080;
 }
 
 .destination-card-grid {
+    /* display: flex; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-
+    gap: 30px;
 }
 
 .destination-card {
-    background-color: #ffff;
-    border-radius: 20px;
+    background-color: #ffffff;
+    border-radius: 24px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 10px;
+    /* cursor: pointer; */
     position: relative;
-
-
 }
 
-.destination-card :hover {
+.destination-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
@@ -415,6 +489,7 @@ header {
     border-radius: 20px;
     height: 200px;
     margin-bottom: 15px;
+    /* border: 1px solid red; */
 }
 
 .card-image-wrapper>img {
@@ -438,32 +513,34 @@ header {
     margin: 0 0 0 15px;
 }
 
-.card-loction {
-    margin: 0 0 0 15px
+.card-location {
+    margin: 0 0 0 15px;
 }
 
 .fa-star {
     color: gold;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .card-image-wrapper span {
     background-color: white;
     position: absolute;
-    padding: 2px 10px;
+    padding: 2px 8px;
     border-radius: 15px;
     font-size: 10px;
     top: 20px;
     right: 20px;
 }
 
-.card-loction {
+.card-location {
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.5);
+    color: #00000080;
 }
 
-/* Testimonials section styles  */
-.testimonial-section {}
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+}
 
 .container {
     max-width: 1200px;
@@ -471,55 +548,54 @@ header {
     padding: 0 20px;
 }
 
+
 .testimonial-wrapper {
     display: flex;
     gap: 30px;
     justify-content: center;
     margin-bottom: 50px;
-
+    /* border: 1px solid red; */
 }
 
 .testimonial-card {
-    background-color: #ffff;
+    background-color: white;
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     position: relative;
-    height: 4;
+    height: 270px;
 }
 
-.quote-icon {
+.quote-icon>img {
     font-size: 400px;
     color: #dcdcdf;
     margin-bottom: 20px;
     position: absolute;
-    top: 0;
+    top: 5px;
     z-index: 0;
     left: 40%;
 }
 
 .testimonial-text {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
-    position: relative;
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
-
 }
 
 .author-name {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #3e86f5;
+    color: #3E86F5;
     text-align: center;
 }
 
 .author-title {
     font-size: 20px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.5);
+    color: #00000080;
     position: relative;
     z-index: 1;
 }
@@ -530,7 +606,7 @@ header {
     align-items: center;
     gap: 15px;
     position: relative;
-    z-index: 3
+    z-index: 3;
 }
 
 .author-rating {
@@ -542,8 +618,8 @@ header {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 0px;
-
+    top: 3px;
+    right: 35%;
 }
 
 .circle {
@@ -551,16 +627,21 @@ header {
     height: 150px;
     border-radius: 50%;
     position: absolute;
-    bottom: -40%;
-    left: 45%;
+    bottom: -40px;
+    left: 37%;
     background-color: white;
-
-
 }
 
-/* Discount banner section styles */
-.discount-banner-section .continer {
-    background-image: url(../images/firstpage.png);
+.next {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Discount Banner Section Styles  */
+
+.discount-banner-section .container {
+    background-image: url(../images/DontMiss.png);
     background-size: cover;
     background-position: center;
     border-radius: 20px;
@@ -569,6 +650,7 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
+    margin-top: 60px;
 }
 
 .discount-banner-section h2 {
@@ -579,24 +661,26 @@ header {
 .discount-banner-section a {
     text-decoration: none;
     background-color: white;
-    color: #3e86f5;
+    color: #3E86F5;
     padding: 10px 30px;
     border-radius: 8px;
     font-size: 16px;
-    font-size: 16px;
     font-weight: 500;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .discount-banner-section a:hover {
     background-color: #e1e9fa;
 }
 
-/* footer style section */
+
+/* Footer Styling  */
 .footer-content {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
 }
 
 .footer-nav ul {
@@ -606,9 +690,10 @@ header {
 
 .footer-nav ul li {
     list-style: none;
+
 }
 
-.footer-nav ul li a {
+.footer.nav ul li a {
     color: #555;
     text-decoration: none;
     font-size: 16px;
